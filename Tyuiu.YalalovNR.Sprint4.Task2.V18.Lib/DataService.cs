@@ -11,7 +11,7 @@ namespace Tyuiu.YalalovNR.Sprint4.Task3.V18.Lib
             {
                 if (item % 2 == 0) product *= item;
             }
-            return product;
+            return product; 
         }
     }
 }
