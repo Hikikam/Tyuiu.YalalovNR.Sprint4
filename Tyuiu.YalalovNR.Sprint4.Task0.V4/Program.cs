@@ -12,7 +12,7 @@ namespace Tyuiu.YalalovNR.Sprint4.Task0.V4
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int[] array = { 5, 3, 7, 1, 3, 9, 8, 7, 9, 4 };
+            int[] array = { 5, 3, 7, 1, 3, 9, 8, 7, 9, 4  };
 
             Console.WriteLine("Массив: " + string.Join(", ", array));
 
