@@ -1,6 +1,6 @@
 ﻿using System;
 using Tyuiu.YalalovNR.Sprint4.Task1.V3.Lib;
-namespace Tyuiu.YalalovNR.Sprint4.Task0.V3
+namespace Tyuiu.YalalovNR.Sprint4.Task1.V3
 {
     class Program
     {
