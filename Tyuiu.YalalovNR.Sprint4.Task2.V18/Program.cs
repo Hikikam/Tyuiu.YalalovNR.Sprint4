@@ -13,16 +13,18 @@ namespace Tyuiu.YalalovNR.Sprint4.Task3.V18
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int[] array = new int[12];
-            Random rnd = new Random();
+            
+            int[,] array = { { 2, 4, 6, 8 }, { 3, 5, 7, 9 }, { 2, 4, 6, 8 } };
 
-            Console.Write("Массив: ");
-            for (int i = 0; i < array.Length; i++)
+            
+            for (int i = 0; i < 3; i++)
             {
-                array[i] = rnd.Next(2, 9);
-                Console.Write(array[i] + " ");
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.Write(array[i, j] + " ");
+                }
+                Console.WriteLine();
             }
-            Console.WriteLine();
 
             int res = ds.Calculate(array);
 
