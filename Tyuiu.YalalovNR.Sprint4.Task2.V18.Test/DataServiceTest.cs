@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tyuiu.YalalovNR.Sprint4.Task3.V18.Lib;
+using Tyuiu.YalalovNR.Sprint4.Task2.V18.Lib;
 
-namespace Tyuiu.YalalovNR.Sprint4.Task3.V18.Test
+namespace Tyuiu.YalalovNR.Sprint4.Task2.V18.Test
 {
     [TestClass]
     public sealed class DataServiceTest
@@ -11,11 +11,10 @@ namespace Tyuiu.YalalovNR.Sprint4.Task3.V18.Test
         {
             DataService ds = new DataService();
 
-            
-            int[,] array = { { 2, 4 }, { 8, 10 } };
+            int[] array = { 2, 4, 8, 10 };
 
             int res = ds.Calculate(array);
-            int wait = 640; 
+            int wait = 640;
 
             Assert.AreEqual(wait, res);
         }

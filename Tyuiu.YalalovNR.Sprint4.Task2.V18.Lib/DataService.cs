@@ -1,18 +1,18 @@
 ﻿using System;
 using tyuiu.cources.programming.interfaces.Sprint4;
 
-namespace Tyuiu.YalalovNR.Sprint4.Task3.V18.Lib
+namespace Tyuiu.YalalovNR.Sprint4.Task2.V18.Lib
 {
-    public class DataService : ISprint4Task3V18
+    public class DataService : ISprint4Task2V18
     {
-        public int Calculate(int[,] array)
+        public int Calculate(int[] array)
         {
             int product = 1;
-            foreach (int item in array)
+            for (int i = 0; i < array.Length; i++)
             {
-                if (item % 2 == 0)
+                if (array[i] % 2 == 0)
                 {
-                    product *= item;
+                    product = product * array[i];
                 }
             }
             return product;
